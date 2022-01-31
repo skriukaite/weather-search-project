@@ -1,0 +1,70 @@
+.Weather {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 0;
+}
+
+.Weather form {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+.Weather h1 {
+  color: rgb(32, 33, 36);
+  display: block;
+  font-size: 22px;
+  font-weight: 400;
+  height: 26px;
+  line-height: 26px;
+}
+.Weather .weatherProperties {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+.Weather ul {
+  list-style: none;
+  padding-left: 0;
+  color: rgb(112, 117, 122);
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  height: 20px;
+  line-height: 20px;
+}
+
+.Weather .temperatureColumn {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding-bottom: 30px;
+}
+
+.Weather .currentTemperature {
+  color: #202124;
+  display: inline-flex;
+  font-size: 48px;
+  line-height: 60px;
+  vertical-align: top;
+}
+
+.Weather .units {
+  color: #202124;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 6px;
+  padding-left: 6px;
+  vertical-align: top;
+}
+
+.Weather .temperatureProperties {
+  color: #70757a;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 9px;
+  padding-top: 6px;
+}
