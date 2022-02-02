@@ -5,11 +5,18 @@
   margin-left: 0;
 }
 
-.Weather form {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
+input .form-control {
+  display: inline-block;
+  font-weight: bolder;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 60%;
 }
+
+.Weather .btn {
+  margin-bottom: 0.2rem;
+}
+
 .Weather h1 {
   color: rgb(112, 117, 122);
   display: block;

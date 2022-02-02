@@ -1,6 +1,5 @@
 import React from "react";
 import Weather from "./Weather";
-import Search from "./Search";
 import "./App.css";
 
 function App() {
@@ -8,8 +7,7 @@ function App() {
     <div className="App">
       <div className="container">
         <header> Weather App</header>
-        <Search />
-        <Weather defaultCity="Vilnius" />
+        <Weather defaultCity="New York" />
       </div>
       <footer>
         {" "}
