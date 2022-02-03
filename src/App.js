@@ -18,7 +18,12 @@ function App() {
         >
           {" "}
           GitHub
-        </a>
+        </a>{" "}
+        and hosted on{" "}
+        <a href="https://weather-search-project.netlify.app/" taget="_blank">
+          {" "}
+          Netlify
+        </a>{" "}
       </footer>
     </div>
   );
