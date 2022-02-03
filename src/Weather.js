@@ -44,17 +44,23 @@ export default function Weather(props) {
           onSubmit={handleSubmit}
           className="Search-form form-inline form-group"
         >
-          <input
-            type="text"
-            placeholder="Enter a city"
-            className="form-control input-line"
-            onChange={handleCityChange}
-          ></input>
-          <input
-            type="submit"
-            value="Search"
-            className="btn btn-secondary"
-          ></input>
+          <div className="row">
+            <div className="col-9">
+              <input
+                type="text"
+                placeholder="Enter a city"
+                className="form-control input-line"
+                onChange={handleCityChange}
+              ></input>
+            </div>
+            <div className="col-3">
+              <input
+                type="submit"
+                value="Search"
+                className="btn btn-secondary"
+              ></input>
+            </div>
+          </div>
         </form>
         <WeatherInfo data={weatherData} />
       </div>
