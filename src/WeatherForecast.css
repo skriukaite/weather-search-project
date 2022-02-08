@@ -3,12 +3,12 @@
   margin-bottom: 25px;
 }
 
-.WeatherForecast-night {
+.WeatherForecast-night-temperature {
   opacity: 0.6;
   margin-left: 6px;
   font-size: 13px;
 }
 
-.WeatherForecast-day {
+.WeatherForecast-day-temperature {
   font-size: 13px;
 }
