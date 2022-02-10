@@ -15,12 +15,17 @@ function App() {
         <a
           href="https://github.com/skriukaite/weather-search-project"
           taget="_blank"
+          rel="noopener noreferrer"
         >
           {" "}
           GitHub
         </a>{" "}
         and hosted on{" "}
-        <a href="https://weather-search-project.netlify.app/" taget="_blank">
+        <a
+          href="https://weather-search-project.netlify.app/"
+          taget="_blank"
+          rel="noopener noreferrer"
+        >
           {" "}
           Netlify
         </a>{" "}

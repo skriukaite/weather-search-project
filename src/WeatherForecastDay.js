@@ -4,12 +4,21 @@ import WeatherIcon from "./WeatherIcon";
 export default function WeatherForecastDay(props) {
   function day() {
     let date = new Date(props.data.dt * 1000);
-    let day = getDay();
+    let day = date.getDay();
     let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
     return days[day];
   }
 
+  function dayTemperature() {
+    let temperature = Math.round(props.data.temp.day);
+    return `${temperature}°`;
+  }
+
+  function nightTemperature() {
+    let temperature = Math.round(props.data.temp.night);
+    return `${temperature}°`;
+  }
   return (
     <div className="WeatherForecastDay">
       <div className="WeatherForecast-day">{day()}</div>
@@ -18,10 +27,10 @@ export default function WeatherForecastDay(props) {
       </div>
       <div>
         <span className="WeatherForecast-day-temperature">
-          {Math.round(props.data.temp.day)}°
+          {dayTemperature()}
         </span>
         <span className="WeatherForecast-night-temperature">
-          {Math.round(props.data.temp.night)}°
+          {nightTemperature()}
         </span>
       </div>
     </div>
